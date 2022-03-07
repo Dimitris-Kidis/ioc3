@@ -1,0 +1,138 @@
+* {
+  background-color: rgb(113, 139, 155);
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hint {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+#gate-1 {
+  width: 10px;
+  height: 30px;
+  background-color: #cf945a;
+}
+
+#stimul {
+  width: 10px;
+  height: 30px;
+  background-color: rgb(230, 230, 230);
+  display: block;
+}
+
+#gate-2 {
+  width: 10px;
+  height: 30px;
+  background-color: #cf945a;
+}
+/*****/
+.gate-right {
+  transform: translate(300px);
+}
+.stimul-left {
+  transform: translate(-450px);
+}
+/*****/
+.gate-left {
+  transform: translate(-300px);
+}
+.stimul-right {
+  transform: translate(450px);
+}
+/*****/
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.gatefield {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 70vh;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s ease;
+  transform: translate(0px, 20px);
+}
+
+/*-------------------*/
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+p {
+  font-family: "Roboto Mono", monospace;
+  font-size: small;
+  background-color: white !important;
+}
+
+font {
+  background-color: white !important;
+}
+
+.data {
+  margin-top: 30px;
+}
+
+.hid {
+  display: none;
+}
+
+#gate-link,
+#clock-link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+#gate-link:after,
+#clock-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#gate-link:hover:after,
+#clock-link:hover:after {
+  width: 100%;
+  left: 0;
+}
