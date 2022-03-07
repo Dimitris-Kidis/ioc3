@@ -182,7 +182,7 @@ function getRandomSide() {
 
 function start(side) {
 
-  if ( indexCount < 6 ) {
+  if ( indexCount < 20 ) {
     if ( side === 0 ) { // RIGHT
       firstGate.classList.add('gate-right');
       secondGate.classList.add('gate-right');

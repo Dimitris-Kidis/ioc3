@@ -419,7 +419,7 @@ document.addEventListener('keyup', function(event) {
 })
 
 function start () {
-  if ( indexCount < 6 ) {
+  if ( indexCount < 20 ) {
     moving();
   } else {
   /*------*/
